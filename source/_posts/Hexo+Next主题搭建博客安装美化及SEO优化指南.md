@@ -1,0 +1,375 @@
+---
+title: Hexo+Next主题搭建博客安装美化及SEO优化指南
+copyright: true
+tags:
+  - Hexo
+  - Next主题
+  - 网站搭建
+  - SEO
+categories: 运维环境配置
+abbrlink: a625fa82
+date: 2018-01-02 18:02:43
+---
+
+{% cq %} 做博客最重要的是用心啦{% endcq %}
+
+{% note success %} 最终成果当然是本站了。安装，美化，SEO推广，部署通通奉上。
+
+- 持续集成自动部署已提上日程。 
+{% endnote %}
+
+
+<!--more-->
+
+## Hexo + Next主题 搭建博客 "真"零基础安装配置
+
+最终成果: 本站
+
+### node.js
+
+官网下载:  **下一步下一步安装法**
+
+node-v8.9.3-x64
+
+C:\softEnvir\nodejs
+
+验证安装:
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/b7lilij8GG.png?imageslim)
+
+#### 设置npm下载目录
+
+```
+npm config set prefix D:\softEnvDown\nodejs\node_global
+npm config set cache D:\softEnvDown\nodejs\node_cache
+npm config ls
+```
+
+>npm模块安装的默认全局路径已经改到了相应的文件夹中，但是 这时候用户还是无法require这些模块。因为电脑系统现在还不知道你把默认路径给改了，所以需要在`win+R`-->“`sysdm.cpl`-->`高级`-->`环境变量`打开设置对话框。
+
+- 首先在`系统变量`中新建，新建一个名为`NODE_PATH`的变量，变量值: 全局模块的文件夹中的node_modules文件夹的绝对路径.
+
+即：`D:\softEnvDown\nodejs\node_global\node_modules`
+
+配置文件目录：`C:\Users\mtian\.npmrc`
+
+####  安装cnpm
+
+`npm install -g cnpm --registry=https://registry.npm.taobao.org`
+
+### Git安装
+
+Git-2.15.1.2-64-bit（同样官网下载: **下一步下一步安装法**）
+
+C:\softEnvir\Git
+
+### hexo-cli: 1.0.4安装
+
+cmd控制台下:
+
+      `npm install -g hexo-cli`
+
+### 初始化hexo博客目录
+
+D:/mtianBlog:
+
+`hexo init hexoBlog`
+
+### 下载next主题及主题美化
+
+官方文档地址： http://theme-next.iissnan.com/
+
+下载主题next：v5.1.4。名字改为next
+
+然后放入`D:\mtianBlog\hexoBlog\themes`
+
+```
+hexo clean
+
+hexo s --debug
+```
+
+####主题美化。
+
+推荐阅读：https://www.jianshu.com/p/f054333ac9e6
+
+部分节选：
+
+1. 圆形头像旋转。
+
+打开`\themes\next\source\css\_common\components\sidebar\sidebar-author.styl`，在里面添加如下代码：
+
+```css
+.site-author-image {
+  display: block;
+  margin: 0 auto;
+  padding: $site-author-image-padding;
+  max-width: $site-author-image-width;
+  height: $site-author-image-height;
+  border: $site-author-image-border-width solid $site-author-image-border-color;
+
+  /* 头像圆形 */
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  box-shadow: inset 0 -1px 0 #333sf;
+
+  /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
+    (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
+ 
+
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transition: -webkit-transform 1.0s ease-out;
+  -moz-transition: -moz-transform 1.0s ease-out;
+  transition: transform 1.0s ease-out;
+}
+
+img:hover {
+  /* 鼠标经过停止头像旋转 
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;*/
+
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+/* Z 轴旋转动画 */
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+@-moz-keyframes play {
+  0% {
+    -moz-transform: rotateZ(0deg);
+  }
+  100% {
+    -moz-transform: rotateZ(-360deg);
+  }
+}
+@keyframes play {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+```
+
+2. 配置百度统计站长版。(官方文档有写)
+
+baidu_analytics: ***
+
+
+3. 配置leancloud (官方文档有写)
+
+leancloud_visitors:
+  enable: true
+  app_id: *
+  app_key: #<app_key>
+
+4. 配置搜索(更推荐localSearch)
+
+```
+algolia:
+  applicationID: '*'
+  apiKey: '*'
+  adminApiKey: '*'
+  indexName: '*'
+  chunkSize: 5000
+
+$ export(windows 为 set) HEXO_ALGOLIA_INDEXING_KEY=***
+$ hexo algolia
+```
+您好！当我集成Algolia时候一直出错——上传不了记录，请问知道如何解决嘛？
+
+答案地址：https://github.com/iissnan/theme-next-docs/issues/162
+
+### 部署hexo：
+
+`npm install hexo-deployer-git --save`
+
+修改站点配置文件：
+
+```
+deploy:
+  type: git
+  repo: https://github.com/mtianyan/mtianyan.github.io
+  branch: master
+  message: new version first commit
+```
+
+需要使用的命令
+
+```
+git config --global user.email "1147727180@qq.com"
+
+git config --global user.name "mtianyan"
+
+hexo clean
+
+hexo g && gulp
+
+hexo d
+```
+### 将博客源码备份到github或码云
+
+```
+
+git init
+
+git add .
+
+git remote add origin https://gitee.com/mtianyan/hexoBlog-mayun.git
+
+git remote add origin https://github.com/mtianyan/hexoBlog-Github.git
+
+git commit -m "first"
+
+git push -u origin master
+```
+### SEO优化指南
+
+### URL唯一化:
+
+```
+npm install hexo-abbrlink --save
+```
+
+站点配置文件里添加:
+
+```
+permalink: post/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+```
+#### 安装sitemap站点地图生成插件
+
+```
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+```
+
+在站点配置文件或主题配置文件加入。
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/gEGJ5chIDd.png?imageslim)
+
+```
+sitemap: 
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+```
+
+注意缩进
+
+在`hexo-site\source`中新建文件`robots.txt`,内容如下，请自行替换
+
+```
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Allow: /about/ 
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://mtianyan.gitee.io/sitemap.xml
+Sitemap: http://mtianyan.gitee.io/baidusitemap.xml
+```
+
+`Allow`后面的就是你的`menu` 可以在主题配置文件中找到。
+
+前往链接：https://www.google.com/webmasters/
+添加你的网站。
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/JIicldkLjj.png?imageslim)
+
+下载验证文件放入`hexo-site\source`中
+
+Tips: 站点配置文件忽略Google的验证文件。这样`clean`的时候就不会被删除了。
+
+```
+skip_render: 
+  - README.md
+  - google*****.html
+```
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/bje64IcECF.png?imageslim)
+
+打开站点地图：添加站点地图。
+![mark](http://myphoto.mtianyan.cn/blog/180104/A8IbeF4E28.png?imageslim)
+
+可以进入站点地图详情查看有没有报错。
+
+**robots.txt测试**
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/I02kIkA5bf.png?imageslim)
+
+确保0错误，0警告。
+
+### 百度搜索资源平台
+
+http://ziyuan.baidu.com/
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/Fa7hDABmLC.png?imageslim)
+
+点击用户中心。站点管理 进行 添加网站操作。
+
+下载验证文件放入`hexo-site\source`中
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/hBgbcAegeB.png?imageslim)
+
+验证完成之后点击域名进入控制台。
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/LDE1J3hFd5.png?imageslim)
+
+对于Robots文件进行验证。
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/KB20Hi3dbb.png?imageslim)
+
+点击链接提交，往下多翻点
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/Ah2j2DcDCF.png?imageslim)
+
+选择sitemap：填入自己网站的sitemap地址。点击提交
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/Hd75Ffd844.png?imageslim)
+
+查看状态。
+
+![mark](http://myphoto.mtianyan.cn/blog/180104/2A73HjBl59.png?imageslim)
+
+### 页面关键字优化
+title
+
+文件路径是`your-hexo-site\themes\next\layout\index.swig`
+
+将文件中
+
+```
+{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}
+```
+
+改为
+
+```
+{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{{ theme.description }} {% endblock %}
+```
+![mark](http://myphoto.mtianyan.cn/blog/180104/fIbh9eei1a.png?imageslim)
+
+
+
+
