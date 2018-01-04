@@ -13,6 +13,7 @@ before_script:
   - git submodule update --remote --merge
 
 script:
+  - hexo clean
   - hexo g && gulp
 
 after_script:
@@ -21,8 +22,8 @@ after_script:
   - git config user.name "mtianyan"
   - git config user.email "1147727180@qq.com"
   - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${33ba3948ba6549c992ffe0a6ac4e487088a984be}@${mtianyan.github.io}" master:master
+  - git commit -m "Update Website"
+  - git push --force --quiet "https://${33ba3948ba6549c992ffe0a6ac4e487088a984be}@${GIT_PAGE_REF}" master:master
 
 branches:
   only:
