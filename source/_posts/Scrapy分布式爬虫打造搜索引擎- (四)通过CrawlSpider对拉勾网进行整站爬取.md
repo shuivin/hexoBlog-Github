@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (四)通过CrawlSpider对拉勾网进行整站爬取
-date: 2017-07-01 00:56:12
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 13
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: d083b798
+date: 2017-07-01 00:56:12
 ---
 
 {% cq %} 四、通过CrawlSpider对招聘网站拉钩网进行整站爬取{% endcq %}

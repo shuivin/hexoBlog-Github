@@ -1,13 +1,15 @@
 ---
 title: Python：Scrapy分布式爬虫打造搜索引擎集合篇--（一）到（八）完整版
-date: 2018-01-01 20:00:03
-tags: 
-- 爬虫
-- scrapy
-
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
 top: 100
+abbrlink: 3c234171
+date: 2018-01-01 20:00:03
 ---
 
 {% note default %} 基于Scrapy、Redis、elasticsearch和django打造一个完整的搜索引擎网站

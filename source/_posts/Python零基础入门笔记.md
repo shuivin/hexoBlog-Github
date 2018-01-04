@@ -1,121 +1,23 @@
 ---
 title: Python零基础入门笔记
-date: 2018-01-02 23:01:08
-tags: 
-- Python
-- 零基础入门
+tags:
+  - Python
+  - 零基础入门
+  - 学习笔记
 categories: python从入门到精通
 copyright: true
+abbrlink: 7a862501
+date: 2018-01-02 23:01:08
 ---
 
 {% cq %}  复习是为了更好的学习更新的知识。 {% endcq %}
 
 {% note default %} 学习python有一年多了，希望通过学习笔记来复习了，也能让后来者少走一点弯路。在课程笔记的同时加入了一部分自己的经验补充。
-- [√] 慕课网Python开发环境搭建: 配开发环境
 - [√] 廖雪峰老师在慕课网的课程: Python入门
 
 {% endnote %}
 
 <!--more-->
-
-![mark](http://oerdwodsk.bkt.clouddn.com/blog/180103/DHImeGED84.png?imageslim)
-
-# Python开发环境搭建
-
-搭建环境分为两个版本：
-- 基础版，供初学者快速安装体验。
-- 进阶版, 供对于数据科学，机器学习有兴趣者安装。
-
-`推荐：`安装进阶版，一步到位。
-
-## 基础版：Windows下安装python环境(2.7 | 3.x)
-
->官网： https://www.python.org/
-
-
-### 安装包下载。
-选择download下的windows。点击进入。
-
-![download下的windows](http://upload-images.jianshu.io/upload_images/1779926-6c1b1786c1c2134a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-下图中红框为64位版本。32位版本可以选择Windows x86 executable installer
-
-![选择3.7下的executable installer](http://upload-images.jianshu.io/upload_images/1779926-7d2044c2a9c2045c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-**2.7版本的安装包下载：**
-
-![2.7版本](http://upload-images.jianshu.io/upload_images/1779926-3a24a247dce81ddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-### 安装python。
-
-点击下一步下一步进行默认安装即可。（跟平常装个qq啥的没两样）
-
-### 安装完成的测试。
-
-`win（即徽标键）` + `R` 输入`cmd` ：
-打开命令行。输入`python`不报错的进入python控制台下。
-
-## 进阶版：Windows下Anaconda2(Python2)和Anaconda3(Python3)的共存
-
-**转载**
-
-原文地址：http://blog.csdn.net/infin1te/article/details/50445217
-
->Anaconda是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即Anaconda2和Anaconda3。
-
-以上文字摘自转载博客。通俗讲就是一个python的各种科学计算包的大合集版本。省去了自己安装大量基本包的过程。
-
-`Tips:` 3.x版本建议选择Python 3.5.1 |Anaconda 4.1.0 (64-bit)
-
-以后如果要使用python进行TensorFlow windows版的配置可以省下时间。
-
-**这是博主自入python坑以来找到的最好的共存方法，没有出过问任何题**！！！
-
-**这是博主自入python坑以来找到的最好的共存方法，没有出过问任何题**！！！
-
-**这是博主自入python坑以来找到的最好的共存方法，没有出过问任何题**！！！
-
-![最终实现](http://oerdwodsk.bkt.clouddn.com/blog/180103/E4H8flhgjA.png?imageslim)
-
-
-## Linux下的python使用。
-
-- Linux 默认安装python，建议安装IPython；
-- `sudo apt-get install ipython`安装Ipython（支持Tab键自动补齐）
-- 使用Vim来创建`.py`文件
-- 输入`python`即可查看当前版本
-
->IPython是Python的交互式Shell，提供了代码自动补完，自动缩进，高亮显示，执行Shell命令等非常有用的特性。特别是它的代码补完功能.
-
-## python文件类型(常识)
-
-python执行过程：
-
-`.py`文件 --> python解释器 --> 字节码文件 --> python解释器 --> 二进制文件 --> 内存、运行 --> 打印结果
-
-字节码文件:
-
-- `.pyc` 
-转换方式： `python -m py_compile xxx.py`
-作用：提高程序的加载速度
-
-- `.pyo`(优化编译的.pyc文件)
-转换方式： `python -O -m py_compile xxx.py`
-作用：提高程序的运行速度
-
-## eclipse下的python环境安装。
-
-添加python开发环境到eclipse：
-
-- 点击`help`——`install New Software`
-- 点击`add`，弹出新窗口：
-- Name:填PyDev
-- Location:填 http://pydev.org/updates
-- 确认后会出现 PyDev，勾选Pydev。
-- pydev for eclipse--> next--> accept-->finish
-- file--> new--> project -->Pydev下 pydevProject
-
-python的dev下载地址：http://pydev.org/updates
 
 ![mark](http://oerdwodsk.bkt.clouddn.com/blog/180103/La3h6131Bb.png?imageslim)
 
@@ -640,9 +542,9 @@ print u'中文'
 
 字符串在Python内部的表示是unicode编码，因此，在做编码转换时，通常需要以unicode作为中间编码，即先将其他编码的字符串解码`decode`成unicode，再从unicode编码`encode`成另一种编码。 
 
-- decode的作用是将其他编码的字符串转换成unicode编码，如`str1.decode('gb2312')`，表示将gb2312编码的字符串str1转换成unicode编码。 
+- `decode`的作用是将其他编码的字符串转换成`unicode`编码，如`str1.decode('gb2312')`，表示将`gb2312`编码的字符串`str1`转换成`unicode`编码。
 
-- encode的作用是将unicode编码转换成其他编码的字符串，如str2.encode('gb2312')，表示将unicode编码的字符串str2转换成gb2312编码。
+- `encode`的作用是将`unicode`编码转换成其他编码的字符串，如`str2.encode(‘gb2312’)`，表示将`unicode`编码的字符串`str2`转换成`gb2312`编码
 
 - 代码中字符串的默认编码与代码文件本身的编码一致。 
 
@@ -707,7 +609,7 @@ window默认编码gbk；linux默认编码utf8
 ![mark](http://oerdwodsk.bkt.clouddn.com/blog/180103/06C1AfbGII.png?imageslim)
 
 原理说了半天，最后来个包治百病的吧：
-
+(天涯)：下面代码
 
 ```python
 #!/usr/bin/env python  
@@ -2619,7 +2521,7 @@ KeyError: 4
 
 所以用`add()`可以直接添加，而`remove()`前需要判断。
 
-## 编程任务
+### 编程任务
 >针对下面的set，给定一个list，对list中的每一个元素，如果在set中，就将其删除，如果不在set中，就添加进去。
 
 ```
@@ -2640,9 +2542,9 @@ for name in L:
 print s
 ```
 
-## 函数定义与调用
+# 函数定义与调用
 
-Python之什么是函数
+## 什么是函数
 我们知道圆的面积计算公式为：
 
 S = πr²
@@ -2948,7 +2850,7 @@ def fact(n):
 
 知识点: 使用递归函数需要注意防止`栈溢出`。在计算机中，函数调用是通过栈（stack）这种数据结构实现的，每当进入一个函数调用，栈就会加一层栈帧，每当函数返回，栈就会减一层栈帧。由于栈的大小不是无限的，所以，递归调用的次数过多，会导致栈溢出。可以试试计算 `fact(10000)`。
 
-### 编程任务(试题)
+### 编程任务(天涯)
 
 >汉诺塔 (http://baike.baidu.com/view/191666.htm) 的移动也可以看做是递归函数。
 
@@ -3125,7 +3027,7 @@ def average(*args):
 2.4
 ```
 
-## 编程任务
+### 编程任务
 >请编写接受可变参数的 average() 函数。
 
 ```
@@ -3367,7 +3269,7 @@ for (i=0; i<list.length; i++) {
 
 `迭代`与`按下标访问数组`最大的不同是，后者是一种具体的迭代实现方式，而前者只关心迭代结果，根本不关心迭代内部是如何实现的。
 
-## 编程任务
+### 编程任务
 >请用for循环迭代数列 1-100 并打印出7的倍数。
 
 实现代码:
@@ -3448,7 +3350,7 @@ for index, name in enumerate(L):
 
 可见，知识点: **索引迭代也不是真的按索引访问，而是由 enumerate() 函数自动把每个元素变成 (index, element) 这样的tuple，再迭代，就同时获得了索引和元素本身。**
 
-### 编程任务(考试)
+### 编程任务(天涯)
 >zip()函数可以把两个 list 变成一个 list：
 
 ```
@@ -3565,7 +3467,7 @@ Bart : 59
 
 和 `values() `有一个 `itervalues()` 类似，`items()` 也有一个对应的 `iteritems()`，知识点： **iteritems() 不把dict转换成list，而是在迭代过程中不断给出 tuple，所以， iteritems() 不占用额外的内存。**
 
-## 编程任务
+### 编程任务
 >请根据dict：d = { 'Adam': 95, 'Lisa': 85, 'Bart': 59, 'Paul': 74 }
 
 打印出 `name : score`，最后再打印出平均分 `average : score`。
@@ -3593,7 +3495,7 @@ average : 78.25
 
 # 列表生成式:快速生成列表
 
-生成列表
+## 生成列表
 要生成`list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`，我们可以用`range(1, 11)`：
 
 ```python
@@ -3625,7 +3527,7 @@ average : 78.25
 
 知识点: 写列表生成式时，把要生成的元素 `x * x `放到前面，后面跟 for 循环，就可以把list创建出来，十分有用，多写几次，很快就可以熟悉这种语法。
 
-## 编程任务
+### 编程任务
 >请利用列表生成式生成列表 `[1x2, 3x4, 5x6, 7x8, ..., 99x100]`
 
 提示：`range(1, 100, 2) `可以生`成list [1, 3, 5, 7, 9,...]`
@@ -3683,7 +3585,7 @@ print '\n'.join(tds)。列表里的项通过`\n`连接成字符串。
 </table>
 ```
 
-## 编程任务
+### 编程任务(天涯)
 >在生成的表格中，对于没有及格的同学，请把分数标记为红色。
 
 提示：红色可以用 `<td style="color:red">` 实现。
@@ -3748,7 +3650,7 @@ print toUppers(['Hello', 'world', 101])
 ['HELLO', 'WORLD']
 ```
 
-## 多层表达式(二战)
+## 多层表达式(知识点)
 for循环可以`嵌套`，知识点：因此，在列表生成式中，也可以用`多层 for 循环来生成列表`。
 
 对于字符串 `'ABC'` 和 `'123'`，可以使用两层循环，生成全排列：
@@ -3767,7 +3669,7 @@ for m in 'ABC':
         L.append(m + n)
 ```
 
-### 编程任务
+### 编程任务(天涯)
 >利用 3 层for循环的列表生成式，找出对称的 3 位数。例如，121 就是对称数，因为从右到左倒过来还是 121。
 
 实现代码:

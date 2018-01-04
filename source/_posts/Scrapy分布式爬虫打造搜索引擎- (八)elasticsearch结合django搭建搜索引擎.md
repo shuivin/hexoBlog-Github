@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (八)elasticsearch结合django搭建搜索引擎
-date: 2017-07-07 00:57:57
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 17
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: 723b0e71
+date: 2017-07-07 00:57:57
 ---
 {% cq %} 八、elasticsearch搭建搜索引擎 {% endcq %}
 

@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (三)知乎网问题和答案爬取
-date: 2017-06-28 14:58:24
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 12
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: b9bf70b2
+date: 2017-06-28 14:58:24
 ---
 {% cq %} 知乎网问题和答案爬取{% endcq %}
 {% note default %} 对于知乎进行模拟登录以及验证码的处理,对于两种不同新旧样式进行区分。

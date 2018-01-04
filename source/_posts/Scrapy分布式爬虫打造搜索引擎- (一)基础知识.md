@@ -1,12 +1,15 @@
 ---
-title: Scrapy分布式爬虫打造搜索引擎 - (一)基础知识 
-date: 2017-6-26 14:57:00
-tags: 
-- 爬虫
-- scrapy
+title: Scrapy分布式爬虫打造搜索引擎 - (一)基础知识
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 10
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: '9e947300'
+date: 2017-06-26 14:57:00
 ---
 {% cq %} 一、基础知识学习{% endcq %}
 {% note success %} 深度优先广度优先策略的选择。爬虫url去重策略，python字符编码问题。 {% endnote %}

@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (二)伯乐在线爬取所有文章
-date: 2017-06-27 14:58:57
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 11
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: 1cc4531e
+date: 2017-06-27 14:58:57
 ---
 
 {% cq %} 伯乐在线爬取所有文章{% endcq %}

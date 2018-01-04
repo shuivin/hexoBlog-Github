@@ -14,7 +14,10 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.mtianyan.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: post/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
 permalink_defaults:
 
 # Directory
@@ -25,8 +28,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: README.md
-
+skip_render: 
+  - README.md
+  - googlef5c24425113ba3df.html
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -106,3 +110,11 @@ search:
   field: post
   format: html
   limit: 10000
+
+# seo优化
+sitemap: 
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+
+  

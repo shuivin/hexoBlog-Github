@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (七)scrapy-redis分布式爬虫
-date: 2017-07-04 14:06:12
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 16
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: 2b297ffe
+date: 2017-07-04 14:06:12
 ---
 
 {% cq %} 七、scrapy-redis 分布式爬虫{% endcq %}

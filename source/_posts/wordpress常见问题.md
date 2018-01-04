@@ -1,10 +1,13 @@
 ---
 title: wordpress常见问题
-date: 2016-04-09 23:40:15
-tags: 
-- WordPress
-
+tags:
+  - WordPress
+  - 报错处理
+  - 网站搭建
+categories: 运维环境配置
 copyright: true
+abbrlink: f300d993
+date: 2016-04-09 23:40:15
 ---
 {% cq %} 
 在使用wordpress过程中遇到的一些问题及解决方案。
@@ -16,6 +19,7 @@ copyright: true
 
 >解决方案：
 按照lnmp教程中安装pureftp设置好自己的ftp用户名
+
 ## Warning: scandir() has been disabled for security reasons in
 该方案同样可以解决wordpress后台一直重复提示更新翻译
 

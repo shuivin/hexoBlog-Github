@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (六)scrapy进阶开发
-date: 2017-07-03 18:03:10
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 15
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: fb760a12
+date: 2017-07-03 18:03:10
 ---
 {% cq %} 六、scrapy进阶开发{% endcq %}
 {% note info %} Selenium 获取天猫价格，模拟知乎登录，微博模拟登录，模拟JavaScript鼠标下滑，页面不加载图片，phantomjs无界面的浏览器获取天猫价格，selenium集成进scrapy，scrapy的暂停重启。  {% endnote %}

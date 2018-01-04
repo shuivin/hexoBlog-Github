@@ -1,12 +1,15 @@
 ---
 title: Scrapy分布式爬虫打造搜索引擎- (五)爬虫与反爬虫的战争
-date: 2017-07-02 13:36:48
-tags: 
-- 爬虫
-- scrapy
+tags:
+  - 爬虫
+  - 搜索引擎
+  - Scrapy
+  - Python
 top: 14
 categories: Scrapy分布式爬虫打造搜索引擎
 copyright: true
+abbrlink: 791a397f
+date: 2017-07-02 13:36:48
 ---
 {% cq %}  五、爬虫与反爬虫{% endcq %}
 {% note warning %} 介绍反爬虫的基本知识，随机更换useagent，fake UseAgent代理池，西刺代理创建ip代理池，云打码实现验证码的识别等。 {% endnote %}

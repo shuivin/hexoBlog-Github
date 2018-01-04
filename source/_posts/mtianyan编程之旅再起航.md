@@ -1,9 +1,12 @@
 ---
 title: mtianyan编程之旅再起航
-date: 2016-04-09 23:26:57
+password: 1234
 categories: 生活杂谈
-tags: 随笔
+tags:
+  - 随笔
 copyright: true
+abbrlink: aaa786b0
+date: 2016-04-09 23:26:57
 ---
 {% cq %} 总结过去，开往未来{% endcq %}
 {% note default %} 爱生活爱编程：雄关漫道真如铁，而今迈步从头越。 {% endnote %}
