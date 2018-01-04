@@ -46,4 +46,3 @@ notifications:
     - mtianyan@outlook.com
   on_success: change
   on_failure: always
-

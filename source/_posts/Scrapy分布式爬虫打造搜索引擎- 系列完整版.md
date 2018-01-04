@@ -1,5 +1,5 @@
 ---
-title: Python：Scrapy分布式爬虫打造搜索引擎集合篇--（一）到（八）完整版
+title: Scrapy分布式爬虫打造搜索引擎- 系列完整版
 tags:
   - 爬虫
   - 搜索引擎
@@ -11,8 +11,8 @@ top: 100
 abbrlink: 3c234171
 date: 2018-01-01 20:00:03
 ---
-
-{% note default %} 基于Scrapy、Redis、elasticsearch和django打造一个完整的搜索引擎网站
+{% cq  %} 震惊了李彦宏 , 看哭了马化腾 {% endcq %}
+{% note warning %} 基于Scrapy、Redis、elasticsearch和django打造一个完整的搜索引擎网站
 
 本教程一共八章：从零开始，直到搭建一个搜索引擎。
 

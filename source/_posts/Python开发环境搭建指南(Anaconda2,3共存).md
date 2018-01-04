@@ -1,5 +1,5 @@
 ---
-title: 'Python开发环境搭建指南：Anaconda2,3共存'
+title: Python开发环境搭建指南(Anaconda2,3共存)
 tags:
   - Python
   - 零基础入门
