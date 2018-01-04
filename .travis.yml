@@ -23,7 +23,7 @@ after_script:
   - git config user.email "1147727180@qq.com"
   - git add .
   - git commit -m "Update Website"
-  - git push --force --quiet "https://${33ba3948ba6549c992ffe0a6ac4e487088a984be}@${GIT_PAGE_REF}" master:master
+  - git push --force --quiet "https://${Travis_Token}@${GIT_PAGE_REF}" master:master
 
 branches:
   only:
@@ -31,7 +31,6 @@ branches:
 env:
  global:
    - GIT_PAGE_REF: github.com/mtianyan/mtianyan.github.io.git
-   - secure: "Pct6dRL7NiwzKnyJ5HOTgFxzL97B9xHP9NuL7h4yhYoLXpW40/Lvm5kNIvxqcuUlPsGkW/Dd8hHINqitHfTskfgCgBY92nErWCBucGk6lqf+S4eSp/t3tp+Dgz+18s2XZE7AyOz12bNL8alpNv5wwvLjLM5Gr0MHp+klcIS7sWxDQq2EmxZbmZltwbb0NQbuEn50Q5vuo5bDuiCh/V+2a7gu151r0n7piwF7PoHpkCckhgIM09i9S0g5SyXcsC+HCF4p2j2ciRTCRIVVdEM3+/2/P1lNItphYZTdLE2EOG7wRMHVn8BtMcKF3PjHURKNN/+dMAdBF0bflgRcEJQmTh2uo+xEvgKq1x731rbypn5KG+rb7TqwfxWifjLdFU23pwZ31oXYgbsGci3SCd3j5gzK30rcCjyEjHnuhzMQBV/XyBVCGuQCcW7MTE1WffhtDwYYt8nBFQOZYv7RBTxk9siGOuc6sJhpE4gsL15teOUr7GymVqwPn9HiSG/iOm5NKFoPC4ht8Gjboq5sdMeahFYwIlXrule8Y76ZEW0vS6rrwhdyjaQa9CDxhKVvRSljvNuCt+QiDgEnWYZyw4keNTb3Hf/fDWoz0FeYRDBD9BITe4fyDt/cblxFhXT3GMf+JypUoxM5BKBjPFoCk4qYNOHza0tYvcm68LS3jZ+tGXw="
 
 # configure notifications (email, IRC, campfire etc)
 # please update this section to your needs!
