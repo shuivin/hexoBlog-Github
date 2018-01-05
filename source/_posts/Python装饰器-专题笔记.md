@@ -1,12 +1,13 @@
 ---
 title: Python装饰器-专题笔记
-date: 2018-01-04 16:41:46
 tags:
-- Python
-- 装饰器
-- 专题笔记
+  - Python
+  - 装饰器
+  - 专题笔记
 categories: python从入门到精通
-copyright: true 
+copyright: true
+abbrlink: aaa76191
+date: 2018-01-04 16:41:46
 ---
 
 {% cq %} 学会装饰器，Python更进阶 {% endcq %}
