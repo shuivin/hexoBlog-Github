@@ -15,7 +15,8 @@ date: 2018-01-02 18:02:43
 
 {% note success %} 最终成果当然是本站了。安装，美化，SEO推广，部署通通奉上。
 
-- 持续集成自动部署已提上日程。 
+- 持续集成自动部署已提上日程：已完成。
+- 查看持续集成：《用TravisCI持续集成自动部署Hexo博客的个人实践》
 {% endnote %}
 
 
@@ -191,6 +192,57 @@ $ hexo algolia
 
 答案地址：https://github.com/iissnan/theme-next-docs/issues/162
 
+#### 使用gulp进行博文压缩（持续集成自动部署前提）
+
+在站点的根目录下执行以下命令：
+
+```
+$ npm install gulp -g
+$ npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
+```
+
+新建文件`gulpfile.js`:
+
+![mark](http://myphoto.mtianyan.cn/blog/180105/6h9cD64BAa.png?imageslim)
+
+内容为：
+
+```
+var gulp = require('gulp');
+var minifycss = require('gulp-minify-css');
+var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
+var htmlclean = require('gulp-htmlclean');
+// 压缩 public 目录 css
+gulp.task('minify-css', function() {
+    return gulp.src('./public/**/*.css')
+        .pipe(minifycss())
+        .pipe(gulp.dest('./public'));
+});
+// 压缩 public 目录 html
+gulp.task('minify-html', function() {
+  return gulp.src('./public/**/*.html')
+    .pipe(htmlclean())
+    .pipe(htmlmin({
+         removeComments: true,
+         minifyJS: true,
+         minifyCSS: true,
+         minifyURLs: true,
+    }))
+    .pipe(gulp.dest('./public'))
+});
+// 压缩 public/js 目录 js
+gulp.task('minify-js', function() {
+    return gulp.src('./public/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public'));
+});
+// 执行 gulp 命令时执行的任务
+gulp.task('default', [
+    'minify-html','minify-css','minify-js'
+]);
+```
+
 ### 部署hexo：
 
 `npm install hexo-deployer-git --save`
@@ -218,21 +270,22 @@ hexo g && gulp
 
 hexo d
 ```
-### 将博客源码备份到github或码云
+### 将博客源码备份到github或码云(持续集成自动部署前提)
+
+
+```
+git init
+git add .
+git remote add origin https://github.com/mtianyan/hexoBlog-Github.git
+git commit -m "first"
+git push -u origin master
 
 ```
 
-git init
+想要弄到码云替换第三行为下面：
 
-git add .
-
+```
 git remote add origin https://gitee.com/mtianyan/hexoBlog-mayun.git
-
-git remote add origin https://github.com/mtianyan/hexoBlog-Github.git
-
-git commit -m "first"
-
-git push -u origin master
 ```
 ### SEO优化指南
 
