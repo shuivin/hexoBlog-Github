@@ -155,6 +155,37 @@ class AddTimeStampCommand(sublime_plugin.TextCommand):
 "selector": "source.python"
 }
 ```
+#### Python.sublime-settings 
+
+用来替换Tab为4个空格。
+
+```
+{
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true
+}
+```
+
+#### Anaconda Python代码补全
+
+PEP8规范检查
+弹窗报错。
+
+修改首选项->package setting -> Anaconda -> setting -default
+
+```
+     "test_params": {
+        "current_file_tests": "",
+        "current_test": "",
+        "project_tests": ""
+    },
+  "swallow_startup_errors": true,
+```
+#### Python PEP8 autoformat
+
+`ctrl + shift + R`
+
+#### AutoFileName 
 
 
 ### cmder(替代windowscmd的神器)
