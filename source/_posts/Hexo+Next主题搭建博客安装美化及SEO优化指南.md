@@ -90,7 +90,7 @@ hexo clean
 hexo s --debug
 ```
 
-####主题美化。
+#### 主题美化。
 
 推荐阅读：https://www.jianshu.com/p/f054333ac9e6
 
