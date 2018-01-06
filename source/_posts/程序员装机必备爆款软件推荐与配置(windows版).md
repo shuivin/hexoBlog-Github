@@ -144,6 +144,17 @@ class AddTimeStampCommand(sublime_plugin.TextCommand):
 
 #### 设置python3环境
 
+pip更换源：
+
+`C:\Users\mtian\pip\pip.ini`
+
+```
+[global]
+format=columns
+trusted-host = mirrors.ustc.edu.cn
+index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
+```
+
 默认python2环境为安装Python自动设置的。而python3环境则需要自行配置。
 
 ```
@@ -257,6 +268,55 @@ C:\softEnvir\java
 
 C:\software\eclipse\java-oxygen
 
+### Mysql
+
+百度"mysql for windows" 直接在百度软件中心下载即可
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/J808E5JA1i.png?imageslim)
+
+如果你的电脑跟我电脑一样空，推荐遵循我的：
+
+1. 点击接受协议
+2. 选择Custom选项。(如果默认选项，会发生必要条件缺失：如我电脑没有VS和py3.4)
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/A7Cb96mEce.png?imageslim)
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/66L7DaJJCK.png?imageslim)
+
+- 下图页面点击`next`会显示我们不满足的条件，`back`后点击绿色箭头移除。
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/8C2KL0HaI4.png?imageslim)
+
+- 所有条件都达成，点击`Execute`，等待安装完成。
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/78kgLjJl4F.png?imageslim)
+
+>均为绿色代表安装完成。
+
+- 一直默认选择直到下图页面。设置密码，添加用户(可选)
+
+>**注意：记住自己设置的mysql密码**
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/c8aLD2mdC4.png?imageslim)
+
+>之后全部默认下一步。直到安装完成`Finish`
+
+这时Navicat已经可以正常连接了。如果想让命令行下使用。
+
+`C:\Program Files\MySQL\MySQL Server 5.7\bin` (自行替换为自己的mysqk.exe地址)加入环境变量中。
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/DL51BD687G.png?imageslim)
+
+通过`mysql -uroot -p`命令可以进行登入mysql控制台。
+
+![mark](http://myphoto.mtianyan.cn/blog/180106/h1Aa2aJ0G4.png?imageslim)
+### Navicat
+
+安装指南：下一步下一步。
+
+下载地址：http://www.navicat.com.cn/download/navicat-for-mysql
+
+C:\software\Navicat Premium 12
 
 ### PyCharm 2017.3.2
 
