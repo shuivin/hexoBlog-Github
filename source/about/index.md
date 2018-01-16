@@ -9,15 +9,19 @@ date: 2018-01-01 17:31:25
 
 精通各种语言的helloworld。
 
-精通配各种环境，略懂修电脑。
+~~精通配各种环境~~(经历一次配了一夜环境, 再也不敢吹精通了)，略懂修电脑。
 
-爱写博客。上课爱抄ppt，人称ppt复制者。lol万磁王成就达成者。
+爱写博客。上课爱抄ppt做笔记，人称ppt复制者。lol万磁王成就达成者。
 
-技术栈: python java php 
+技术栈:
+
+- Python: `Django` 
+- ~~java php Android~~  
 
 ## 做过的项目：
 
-都不太满意，未完待续。
+- Django结合Xadmin搭建的在线教育平台: http://mxonline.mtianyan.cn/
+- 未完待续
 
 
 ## 同性异性程序员交友交流群。

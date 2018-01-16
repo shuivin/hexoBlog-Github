@@ -4,7 +4,7 @@ tags:
   - Python
   - Django
   - 在线教育平台
-categories: python从入门到精通
+categories: Django+Xadmin打造在线教育平台
 copyright: true
 abbrlink: e4b77eed
 date: 2018-01-07 03:08:18

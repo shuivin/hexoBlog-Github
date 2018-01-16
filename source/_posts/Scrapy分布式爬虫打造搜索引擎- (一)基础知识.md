@@ -105,7 +105,7 @@ scrapy去重使用的是第三种方法：后面分布式scrapy-redis会讲解bl
 **保存文件时，转换为utf-8编码。以便于传输**
 读文件的库会将转换为unicode
 
-*python2 默认编码格式为`ASCII`，Python3 默认编码为 `utf-8`*
+**python2 默认编码格式为`ASCII`，Python3 默认编码为 `utf-8`**
 ```python
 #python3
 import sys
