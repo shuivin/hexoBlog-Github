@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.mtianyan.cn/sitemap.xml
-Sitemap: http://blog.mtianyan.cn/baidusitemap.xml
+Sitemap: http://fanpengtao.tk/sitemap.xml
+Sitemap: http://fanpengtao.tk/baidusitemap.xml

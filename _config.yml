@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: mtianyan's blog
-subtitle: 天涯明月笙的博客小站(Github托管)
-description: 爱分享，爱技术，爱生活。
-author: mtianyan
+title: 8小时外折腾记录
+subtitle: -- 记录做的零散事情
+description: 个人工作外小爱好记录
+keywords: python mtk mediatek camera linux
+author: qanniu
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.mtianyan.cn
+url: http://fanpengtao.tk
 root: /
 permalink: post/:abbrlink.html
 abbrlink:
@@ -30,15 +31,17 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
   - README.md
-  - googlef5c24425113ba3df.html
+  - google1540d5736a12c9f7.html
+  - baidu_verify_ngSYWtg3zE.html
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -82,9 +85,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/mtianyan/mtianyan.github.io
+  repo: git@github.com:shuivin/shuivin.github.io.git
   branch: master
-  message: mayun
+  message: qanniu
 
 #配置algolia搜索
 #algolia:

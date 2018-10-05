@@ -27,7 +27,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "mtk, mediatek, camera, driver, isp, tuning"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -120,7 +120,7 @@ scheme: Gemini
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/mtianyan || github
+  GitHub: https://github.com/shuivin || github
   简书: https://www.jianshu.com/u/db9a7a0daa1f || book
   Google: https://plus.google.com/u/0/114963812195952881148 || google
  
@@ -136,7 +136,7 @@ links_title: 友情链接
 links_layout: block
 #links_layout: inline
 links:
-  本站孪生站(国内码云托管): http://mtianyan.gitee.io/
+  本站孪生站(国内码云托管): http://qanniu.gitee.io/
 	
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -340,7 +340,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: 415372bd35fec36f7558dd96b48ec03f
+baidu_analytics: f049fe772d6c097918e64d3878ff9533
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -519,8 +519,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: 2uqmIjYredIvFy6tEXbKG4Fj-gzGzoHsz
-  app_key: CWl1rE8cQlIseOg2Cq3hzxYi
+  app_id: 61CVKoqakC01we04VscEVyPP-gzGzoHsz
+  app_key: OTntUSj7XfXsrptRceJbigEi
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId

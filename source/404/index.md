@@ -16,7 +16,7 @@ date: 2018-01-01 17:26:28
 <body>
   <script type="text/plain" src="http://www.qq.com/404/search_children.js"
           charset="utf-8" homePageUrl="/"
-          homePageName="返回天涯明月笙博客小站主页">
+          homePageName="返回小站主页">
   </script>
   <script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
   <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
