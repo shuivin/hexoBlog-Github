@@ -1,8 +1,8 @@
-## mtianyan's blog
+## shuivin's blog
 
-天涯明月笙的博客小站
+shuivin的博客小站
 
-[![Build Status](https://travis-ci.org/mtianyan/hexoBlog-Github.svg?branch=master)](https://travis-ci.org/mtianyan/hexoBlog-Github)
+[![Build Status](https://travis-ci.org/shuivin/hexoBlog-Github.svg?branch=master)](https://travis-ci.org/shuivin/hexoBlog-Github)
 
 由`Hexo`强力驱动，托管在`码云`和`github`，采用`next`主题。使用`travis-ci`进行持续集成自动部署。
 
@@ -13,11 +13,8 @@
 - 持续集成部署教程：《用TravisCI持续集成自动部署Hexo博客的个人实践》
 	http://blog.mtianyan.cn/post/90a759d5.html#more
 
-个人简书地址: https://www.jianshu.com/u/db9a7a0daa1f
 
-博客码云托管访问地址：http://mtianyan.gitee.io/
-
-博客Github托管访问地址: http://blog.mtianyan.cn/
+博客Github托管访问地址: http://fanpengtao.tk/
 
 欢迎Star！！！欢迎关注，点赞，评论。
 
