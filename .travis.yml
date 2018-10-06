@@ -29,6 +29,7 @@ after_script:
   - git add .
   - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
   - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master:master  #GH_TOKEN是在Travis中配置token的名称
+  - git push --force --quiet "https://${Travis_Token_Gitee}@${GH_REF_GITEE}" master:master  #GH_TOKEN是在Travis中配置token的名称
 
 branches:
   only:
@@ -36,6 +37,7 @@ branches:
 env:
  global:
    - GH_REF: github.com/shuivin/shuivin.github.io.git  #设置GH_REF，注意更改yourname
+   - GH_REF_GITEE: gitee.com/qanniu/hexo_source_code.git
 
 # configure notifications (email, IRC, campfire etc)
 # please update this section to your needs!
