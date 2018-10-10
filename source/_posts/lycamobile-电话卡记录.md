@@ -1,18 +1,14 @@
 ---
-title: lycamobile电话卡SOP
-date: 2018-10-10 19:37:04
+title: lycamobile 电话卡记录
 tags:
-  - lycamobile
-  - 网络资源
+  - lycamoble
 categories: 网络资源
-copyright:true
+copyright: true
+abbrlink: b085ccb3
+date: 2018-10-10 23:15:31
 ---
 
-
-{% cq %} 介绍LycaMobile购卡/激活/充值5刀/取消语音信箱的SOP{% endcq %}
-
-{% note success %} 
-不看该文档还在群里问小白问题的就该无视了。
+介绍LycaMobile购卡/激活/充值5刀/取消语音信箱的SOP
 
 <!--more-->
 
@@ -51,12 +47,12 @@ copyright:true
 2. 中国境内激活：只要电话客服，把卡上面的19位卡号报给客服即可。客服电话+1-866-277-3221，上班时间为中国时间晚上11点到第二天上午8点。
 3. 美国本地激活：有美国朋友可以让美国的朋友激活。
 注意PIN码在激活Lycamobile时候，发送给号码的短信中！一定要保留好.
-![激活方法1截图](activate-sim.png)
-	
+{% asset_img activate-sim.png 激活方法1截图 %}
+
 ## 充值方法
-1. 目前官网充值最低是$10,加上税费一共是$10.4左右.但官网充值最安全.[充值链接](https://www.lycamobile.us/recharge)
+1. 目前官网充值最低是$10充值,加上税费一共是$10.4左右.但官网充值最安全.[充值链接](https://www.lycamobile.us/recharge)
 2. 万能的淘宝有做$5充值的,这个不方便细说,感兴趣可以去tg群里面看群公告.
-![充值方法1截图](rechange.png)
+{% asset_img rechange.png 充值方法1截图 %}
 
 ## 关闭语音信箱
 Lycamobile激活后自动开通了一个语音信箱的功能。假如你的手机处于关机状态，别人拨打电话会转接到你的语音信息。这样会产生0.46刀的费用！
@@ -66,7 +62,12 @@ Lycamobile激活后自动开通了一个语音信箱的功能。假如你的手�
 2. 手机拨打 *#21#  可以暂时关闭语音信箱（临时方案）。
 3. 拨打客服电话 1-866-277-3221 ，可以用GV拨打，让客服帮忙关闭（考验英语口语水平）！
 4. 官网可以给客服发邮件申请关闭
-![第一种方法截图](/Snipaste_2018-10-10_21-45-10.png)
+    ![第一种方法截图](Snipaste_2018-10-10_21-45-10.png)
+    {% asset_img Snipaste_2018-10-10_21-45-10.png 关闭语音信箱方法1截图 %}
+
+![1539189663864](../images/1539189663864.png)
+
+
 
 ## 参考链接
 https://51.ruyo.net/8710.html

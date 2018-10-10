@@ -1,9 +1,10 @@
 ---
 title: travis-ci-helloworld-blog
+copyright: true
+abbrlink: d73bd556
 date: 2018-10-06 05:29:34
 tags:
 categories:
-copyright: true
 ---
 
 
