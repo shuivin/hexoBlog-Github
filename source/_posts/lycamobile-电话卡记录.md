@@ -23,8 +23,7 @@ date: 2018-10-10 23:15:31
 5. 不可描述的功能.
 
 ## 更细节的不宜网页说明的内容可以加群聊,加群方法:
-1. 若您是国外电话注册的tg, 可以直接联系TG账号 @GoogleVSBaidu , 请他给您发群邀请.
-2. 或者可以参考下文的**购卡方法**章节,拍下后旺旺联系店主提供群邀请.
+1. [tg群链接](https://t.me/lycamobile888)
 
 ## 最低资费
 零月租套餐没有最低消费要求，在中国漫游时，打电话和接电话都是每分钟0.49美元，发短信是每条0.1美元，收短信免费；
@@ -38,7 +37,7 @@ date: 2018-10-10 23:15:31
 
 ## 购卡方法
 去这家淘宝店直接拍下35RMB包邮就好了:
-淘宝店: [美国白宫](https://item.taobao.com/item.htm?id=579110121735)
+淘宝店: [购买链接](http://m.tb.cn/h.3iXpKVj?sm=7886e0)
 若需要加群讨论其功能或其他相关少儿不宜的topic, 可以拍下后联系旺旺卖家,请其提供tg 群邀请.
 
 ## 激活方法
@@ -51,16 +50,31 @@ date: 2018-10-10 23:15:31
 
 ## 充值方法
 1. 目前官网充值最低是$10充值,加上税费一共是$10.4左右.但官网充值最安全.[充值链接](https://www.lycamobile.us/recharge)
-2. 万能的淘宝有做$5充值的,这个不方便细说,感兴趣可以去tg群里面看群公告.
+2. 万能的淘宝有做[$5充值的链接](http://m.tb.cn/h.3iXpKVj?sm=7886e0).
 {% asset_img rechange.png 充值方法1截图 %}
 
 ## 关闭语音信箱
 Lycamobile激活后自动开通了一个语音信箱的功能。假如你的手机处于关机状态，别人拨打电话会转接到你的语音信息。这样会产生0.46刀的费用！
 目前有4种方式,按照便捷性排序:
 
-1. 在[这个网址](ttps://www.lycamobile.us)右下角选红色的chat online
+1. 在[这个网址](ttps://www.lycamobile.us)右下角选红色的chat online 取消.下面有聊天模板
+
+    >[India] Welcome to Lycamobile customer support, how may I help you?
+    >[India] Good day. How may I help you?
+    >[David] Hello, in order to avoid unnecessary harassment and extra phone bills, please help me to cancel the voicemail function. I don't want to receive voice messages regardless of shutdown or standby. My phone number is *. My puk is * My CIP is * Thank you.
+    >[India] Are we still connected?
+    >[David] yes
+    >[India] Please give me few moments to get the details for you.
+    >[India] Ticket ID: * was created successfully
+    >[India] I have cancelled the vms service
+    >[India] Is there anything else I can help you with today?
+    >[David] thank you very much
+    >[India] You're welcome. Thank you for contacting Lycamobile Web Chat, have a nice day!
+
 2. 手机拨打 *#21#  可以暂时关闭语音信箱（临时方案）。
+
 3. 拨打客服电话 1-866-277-3221 ，可以用GV拨打，让客服帮忙关闭（考验英语口语水平）！
+
 4. 官网可以给客服发邮件申请关闭
     ![第一种方法截图](Snipaste_2018-10-10_21-45-10.png)
     {% asset_img Snipaste_2018-10-10_21-45-10.png 关闭语音信箱方法1截图 %}
@@ -72,4 +86,4 @@ Lycamobile激活后自动开通了一个语音信箱的功能。假如你的手�
 ## 参考链接
 https://51.ruyo.net/8710.html
 https://www.tyf0.com/2018/05/lycamobile%E5%85%AC%E5%8F%B8%E7%9A%84%E7%BE%8E%E5%9B%BD%E6%97%A0%E6%9C%88%E7%A7%9F%E6%89%8B%E6%9C%BA%E5%8D%A1%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/
-https://qblog.org/sales/lycamobile-free-sim-introduce.html
+https://qblog.org/sales/lycamobile-free-sim-introduce.html 法国韩国v

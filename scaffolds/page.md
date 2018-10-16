@@ -2,6 +2,13 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-categories: 
-copyright:
+  - hexo
+  - 网络资源
+  - 饭碗
+categories: hexo
+copyright: true
 ---
+
+
+
+<!--more-->

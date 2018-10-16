@@ -32,7 +32,9 @@ date: 2018-10-11 00:52:31
 
 ![1539190635604](../images/1539190635604.png)
 
-查看网文,有人也和我同样的思路.![](http://anynote.me/2018/05/06/local-image-with-typora/)
+![1539191313849](../images/1539191313849.png)
+
+查看网文,有人也和我.![同样的思路](http://anynote.me/2018/05/06/local-image-with-typora/)
 
 # 遗留问题
 
